@@ -1,0 +1,6 @@
+﻿  MathS.cpp
+C:\Users\sebas\OneDrive\Desktop\Class Work\Code\MathS\MathS\MathS.cpp(68,13): warning C4244:  'return': conversion from 'double' to 'float', possible loss of data
+  Test.cpp
+  Generating Code...
+C:\Users\sebas\OneDrive\Desktop\Class Work\Code\MathS\MathS\MathS.cpp(178,13): warning C4244:  'return': conversion from 'double' to 'float', possible loss of data
+  MathS.vcxproj -> C:\Users\sebas\OneDrive\Desktop\Class Work\Code\MathS\Debug\MathS.exe
