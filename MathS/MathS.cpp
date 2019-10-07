@@ -201,17 +201,6 @@ MathS::Vec3 MathS::Vec4::Convert3()
 //	Matrix3 Shit
 //====================================
 
-void MathS::Mat3::Fill(float fill)
-{
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; i < 3; i++)
-		{
-			values[i][j] = fill;
-		}
-	}
-}
-
 #pragma region Constructors
 //Default Constructor
 MathS::Mat3::Mat3()
@@ -285,6 +274,17 @@ MathS::Mat3 MathS::Mat3::operator*(float number)
 #pragma endregion Operator Overloads
 
 #pragma region Methods
+void MathS::Mat3::Fill(float fill)
+{
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; i < 3; i++)
+		{
+			values[i][j] = fill;
+		}
+	}
+}
+
 MathS::Mat3 MathS::Mat3::Identity()
 {
 	Fill(0);
@@ -326,16 +326,6 @@ float MathS::Mat3::Determinant()
 //	Matrix4 Shit
 //====================================
 
-void MathS::Mat4::Fill(float fill)
-{
-	for (int i = 0; i < 4; i++)
-	{
-		for (int j = 0; i < 4; i++)
-		{
-			values[i][j] = fill;
-		}
-	}
-}
 
 #pragma region Constructors
 //Default Constructor
@@ -451,6 +441,17 @@ MathS::Mat4 MathS::Mat4::operator*(const Mat4& matrix)
 #pragma endregion Operator Overloads
 
 #pragma region Methods
+void MathS::Mat4::Fill(float fill)
+{
+	for (int i = 0; i < 4; i++)
+	{
+		for (int j = 0; i < 4; i++)
+		{
+			values[i][j] = fill;
+		}
+	}
+}
+
 MathS::Mat4 MathS::Mat4::Scale(Vec3 vector)
 {
 	return *this * vector;
